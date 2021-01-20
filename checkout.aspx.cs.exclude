@@ -1,0 +1,76 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+public partial class checkout : System.Web.UI.Page
+{
+    connect c;
+    SqlDataAdapter adp = new SqlDataAdapter();
+    // DataSet ds;
+    DataTable dt = new DataTable();
+    DataTable dt1 = new DataTable();
+    DataTable dt2 = new DataTable();
+   
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Button1.Visible = false;
+        c = new connect();
+       
+
+
+    }
+    protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
+    {
+        Button1.Visible = true;
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+      
+    }
+
+    protected void Button1_Command(object sender, CommandEventArgs e)
+    {
+        int count;
+        c.cmd.CommandText = "select count(order_id) from order";
+        count = Convert.ToInt16(c.cmd.ExecuteScalar()) + 1;
+
+        string itid = ((System.Web.UI.WebControls.Label)e.Item.FindControl("Label1")).Text;
+        string itnm = ((System.Web.UI.WebControls.Label)e.Item.FindControl("Label3")).Text;
+        DateTime dt;
+        dt = DateTime.Now;
+        string pr = ((System.Web.UI.WebControls.Label)e.Item.FindControl("Label4")).Text;
+        string imgg = ((System.Web.UI.WebControls.Image)e.Item.FindControl("Image1")).ImageUrl;
+        string qt = ((System.Web.UI.WebControls.Label)e.Item.FindControl("Label5")).Text;
+        int total;
+        c.cmd.CommandText = "select total(item_id) from cart where cust_id='" + Session["cust_id"] + "'";
+        tot = ((System.Web.UI.WebControls.TextBox)e.Item.FindControl("Label4")).Text + ((System.Web.UI.WebControls.TextBox)e.Item.FindControl("Label5")).Text;
+        string tot = ((System.Web.UI.WebControls.TextBox)e.Item.FindControl("TextBox")).Text;
+
+
+        c.cmd.CommandText = "insert into orderdetail values(@order_id,@cust_id,@item_id,@date,@qty,@price,@image,@total)";
+        c.cmd.Parameters.Clear();
+        c.cmd.Parameters.Add("@order_id", SqlDbType.BigInt).Value = count;
+        c.cmd.Parameters.Add("@cust_id", SqlDbType.NVarChar).Value = Session["cust_id"];
+        c.cmd.Parameters.Add("@item_id", SqlDbType.Int).Value = itid;
+        c.cmd.Parameters.Add("@date", SqlDbType.DateTime).Value = dt;
+        c.cmd.Parameters.Add("@qty", SqlDbType.Int).Value = qt;
+        c.cmd.Parameters.Add("@price", SqlDbType.BigInt).Value = pr;
+        c.cmd.Parameters.Add("@image", SqlDbType.NVarChar).Value = imgg;
+        c.cmd.Parameters.Add("@total", SqlDbType.BigInt).Value = tot;
+
+        //int count1;
+        //c.cmd.CommandText = "select count1(item_id) from cart where cust_id='" + Session["cust_id"] + "'";
+        //count1 = Convert.ToInt16(c.cmd.ExecuteScalar()) + 1;
+      c = new connect();
+        Response.Redirect("~/placeorder.aspx");
+    }
+}

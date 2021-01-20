@@ -1,0 +1,60 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="cart.aspx.cs" Inherits="cart" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
+            <ItemTemplate>
+                <table>
+                    <tr>
+                        <td style="width: 100px">
+                            Item ID</td>
+                        <td style="width: 100px">
+                            Item Name</td>
+                        <td style="width: 100px">
+                            Image</td>
+                        <td style="width: 100px">
+                            Price</td>
+                        <td style="width: 100px">
+                            Qty</td>
+                        <td style="width: 100px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; height: 26px">
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("item_id") %>'></asp:Label></td>
+                        <td style="width: 100px; height: 26px">
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("item_name") %>'></asp:Label></td>
+                        <td style="width: 100px; height: 26px">
+                            <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("image") %>' /></td>
+                        <td style="width: 100px; height: 26px">
+                            <asp:Label ID="Label3" runat="server" Text='<%# Eval("price") %>'></asp:Label></td>
+                        <td style="width: 100px; height: 26px">
+                            <asp:TextBox ID="TextBox1" runat="server" Text='<%# Eval("qty") %>'></asp:TextBox></td>
+                        <td style="width: 100px; height: 26px">
+                            <asp:Button ID="Button1" runat="server" Text="delete" CommandArgument ='<%# Eval("item_id") %>' OnClick="Button1_Click"  /></td>
+                    </tr>
+                </table>
+            </ItemTemplate>
+        </asp:DataList></div>
+        <br />
+        <br />
+        &nbsp;&nbsp;
+        <br />
+        <br />
+        <br />
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:bgroup28ConnectionString %>"
+            SelectCommand="SELECT * FROM [cart] WHERE ([cust__id] = @cust_id)">
+            <SelectParameters>
+                <asp:SessionParameter Name="cust_id" SessionField="cust_id" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+    </form>
+</body>
+</html>

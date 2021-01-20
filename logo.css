@@ -1,0 +1,10 @@
+﻿body {
+}
+.header img
+{ 
+	float:left;
+	width:100px;
+	height:100px;
+	background-color:Transparent;
+	opacity:0.8;
+}

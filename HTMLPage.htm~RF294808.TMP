@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body background="loginbackground.jpg" bgcolor="#000000">
+<div class="login-box">
+<img src="loginicon.jpg" class="loginicon" style="left: 34%; position: relative; top: -39px"/>
+<h1>LOGIN HERE</h1>
+<form action="style.css">
+<p>
+    <span style="font-family: Bookman Old Style">USERNAME</span></p>
+<input type="text" name="username"/>
+<p>
+    <span style="font-family: Bookman Old Style">PASSWORD</span></p>
+<input type="password" name="password"/>
+<input type="submit" name="submit" value="Login" />
+    <br />
+<a href="#"><span style="font-family: Bookman Old Style"><strong>Forgot Password</strong></span></a><span
+    style="font-family: Bookman Old Style"><strong>?</strong></span></form>
+
+</div>
+
+</body>
+</html>

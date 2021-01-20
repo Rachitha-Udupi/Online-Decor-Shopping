@@ -1,0 +1,55 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="mainpage.aspx.cs" Inherits="mainpage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel ="stylesheet" href ="style.css" />
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function TABLE1_onclick() {
+
+}
+
+// ]]>
+</script>
+</head>
+<body background="backg.jpg">
+    <form id="form1" runat="server">
+    
+    
+    <div class="container">
+    <ul>
+   <li style="left: 222px; top: 127px">Home</li>
+    <li style="left: 223px; top: 127px"> Contact Us </li>
+    <li style="left: 224px; top: 127px">Shopping Cart</li>
+    <li style="left: 225px; top: 127px">CheckOut</li>
+        
+    </ul>
+    <div class="container">
+    <table style="position: relative; bottom: -630px; top: 232px;" id="TABLE1"  >
+  
+    <tr>
+   <ul>
+    <li>Categories</li>
+    <li>Curtains</li>
+    <li>Blinds</li>
+    <li>Wallpapers</li>
+    <li>Lights</li>
+   </ul>
+  
+    </tr>
+     </table>
+    </div> 
+<span style="color: #ff0000"> </span>
+        <br />
+        &nbsp; &nbsp;
+        <br />
+        </div>
+    </form>
+    
+</body>
+</html>

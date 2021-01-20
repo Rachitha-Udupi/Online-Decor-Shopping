@@ -1,0 +1,1891 @@
+﻿*
+{
+ margin:0;
+ padding:0;	
+}
+body 
+{
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:100%;
+	background-size:100%;
+	min-width:1000px;
+	max-width:2000px;
+	width:100%;
+	margin:auto;
+    
+    overflow-x:hidden;
+
+	background-size:110%;
+	background-repeat:repeat-x;
+}
+.notransition *
+{
+	transition:none ! important;
+}
+.head
+{
+	background-color:#336699;
+	width: 100%;
+	height: 140px;
+	
+
+	
+}
+.hea
+{
+	background-color:white;
+	width: 100%;
+	height: 140px;
+	
+
+	
+}
+.head img
+{
+	float:left;
+	width:20%;
+	height: 80%;
+}
+.head1
+{ margin-top :5px;
+	margin-bottom :5px;
+	background-color:white;
+	width: 100%;
+	height: 130px;
+	background-repeat:no-repeat;
+ border-bottom-color : Red;
+ border-bottom:1px solid red;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+.head1 img
+{
+	position:relative;
+	float:left;
+ margin-left :14%;
+	width:15%;
+		margin-bottom :5px;
+	height:90%;
+	background-color:Transparent;
+}
+
+.hh
+{ font-size :large;
+	position:relative;
+	float:left;
+ margin-left :34%;
+	width:15%;
+	height:100%;
+	color:Red;
+	background-color:Transparent;
+}
+.hhh
+
+{ 
+	 margin-top :10px;
+	font-size :x-large;
+	position:relative;
+	float:left;
+ margin-left :42%;
+	width:15%;
+	height:100%;
+	color:Red;
+	background-color:Transparent;
+}
+.logistic /*used to style the logistic icon*/
+{
+	height:100px;
+	width:150px;
+	background-image:url('image/icon/logistic-icon.jpg');
+	background-size:100%;
+	position:absolute;
+	border-radius:100%;
+	margin-left:28%;	
+	margin-top:27px;
+	cursor:pointer;
+	border:1px solid black;
+	z-index:10;
+	box-shadow:0 0 3px 3px #888;
+} 
+.seller /*used to style the seller icon*/
+{
+	height:100px;
+	width:150px;
+	background-image:url('image/icon/seller-icon.jpg');
+	background-size:100%;
+	position:absolute;
+	border-radius:100%;
+	margin-left:44%;
+	margin-top:27px;
+	cursor:pointer;
+	border:1px solid black;
+	z-index:10;
+	box-shadow:0 0 3px 3px #888;
+}
+.search /*used to style the search div*/
+{
+	position:relative;	
+	top:10px;
+	bottom:-500px;
+	left:30%;
+	width: 360px;
+	height:35px;
+
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dedede #bababa #aaa #bababa;
+    box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+    border-radius: 10px;    
+    background-color:#f6f6f6;
+}
+
+ .ddbox /*used to style the textbox and the dropdownlist in the search div*/
+{
+	float:left;
+	border-left:none;
+	width: 100px;
+	padding: 10px 20px;
+    margin-top:20px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color:Black;
+	height:45px;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	position:relative;
+	bottom:+17px;
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius:2px;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);	
+	transition: all 0.5s ease;
+}
+
+.searchtxt/*used to style the textbox and the dropdownlist in the search div*/
+{
+	float:left;
+	border-left:none;
+	width: 100px;
+	padding: 10px 20px;
+    margin-top:20px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color:Black;
+	height:45px;
+	top :-1px;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	position:relative;
+	bottom:+17px;
+	background: #fff;
+	border: 1px solid #fff;
+box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);	
+	transition: all 0.5s ease;
+}
+.searchtx /*used to style the textbox and the dropdownlist in the search div*/
+{
+	float:left;
+	border-left:none;
+	width: 400px;
+	padding: 10px 20px;
+    margin-top:20px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color:Black;
+	height:17px;
+	top :-1px;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	position:relative;
+	bottom:+17px;
+	background: #fff;
+	border: 1px solid #fff;
+box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);	
+	transition: all 0.5s ease;
+}
+.searchtxt:hover
+{
+	background: #dfe9ec;
+	color: #414848;	
+}
+.searchtxt:focus
+{
+	background: #dfe9ec;
+	color: #414848;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+}
+.ddbox
+{
+	padding:0px;
+	list-style:none;
+	border-radius: 4px 0 0 4px;
+	font-weight: 800;
+	background-color:white;
+	height:40px;
+		border-right:none;
+	margin-left:20px;
+	float:left;
+	width: auto;
+}
+.ddbox:hover
+{
+	cursor:pointer;
+}
+.searchbtn /*used to style the search button in the search div*/
+{
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);	
+
+
+	 width:35px;
+	 height:40px;
+	position:relative;
+
+	top:+4px;
+	cursor:pointer;
+	background-color:royalblue;
+	background-repeat:no-repeat;
+}
+.searchbtn:hover
+{
+	background: #3f9db8;
+	border: 1px solid rgba(256,256,256,0.75);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);	
+}
+.searchbtn:focus
+{
+	top:+6px;
+	background: royalblue;
+	box-shadow: inset 0 4px 6px rgba(256,256,256,0.75);
+}
+.userbtn /*used to style the user icon in the home page*/
+{
+	 text-align :center ;
+	background-position:center;
+	background-repeat:no-repeat;
+	float:right;	
+ border-radius:3px;
+	width:90px;
+	height:27px;
+	position:relative;
+	top:20px;
+	left:-5%;
+	cursor:pointer;
+	background-color:#336699;
+
+}
+.profile
+{
+		width:100px;
+	height:27px;
+color:White ;
+font-size:medium;
+position :relative ;	
+}
+
+.profile:hover
+{ 
+	border-radius:3px;
+	text-align :center;
+		width:100px;
+	height:27px;
+
+
+position :relative ;	
+}
+
+.profil
+{
+color:White ;
+background-color :#336699;
+position :relative ;	
+border: 2px solid #336699;
+}
+
+
+.profil:hover
+{
+
+	box-shadow:0 0 3px 3px #888;
+}
+.userbtn:hover
+{
+	background-color:transparent;
+	
+}
+.triangle, .triangle1 /*used to style the traingle in the user and cart div*/
+{
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 7px solid transparent;
+  border-bottom-color:gray;
+  float:right;
+  position:relative;
+  top:10px;
+  right:+20px;
+  opacity:0;
+  cursor:pointer;
+}
+.triangle1
+{
+	top:10px;
+	right:20px;
+	border-bottom-color:white;
+	color:#fff;
+}
+
+l ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+    height:400px;
+}
+
+l li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+l li a.active {
+    background-color: #cccccc;
+    color: white;
+}
+
+l li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.userbtn ul /*used to style the unordered list in the user icon*/
+{
+	 position:relative;
+	 margin-top:1px;
+	 float:right;
+	 right:3px;
+	 z-index:1000;
+	 list-style:none;
+	 border-radius:3px;
+}
+.userbtn ul li /*used to style the list in the unordered list of the user icon*/
+{
+	 opacity:0;
+	 border-radius:2px;
+	 position:relative;
+	 border-left:1px solid black;
+	 border-right:1px solid black;
+	 text-align:center;
+	 background:white;
+	 border-color:#888 #777 #444 #555; 
+	 color:yellow;
+	 font-weight:bold;
+	 line-height:1px;
+	 transition: 0.3s;
+	 width:150%; 
+}
+.userbtn ul li a /*used to style the anchor in the unordered list of the user icon*/
+{
+	 text-decoration:none;
+	 position:relative;
+}
+.userbtn:hover ul li /*used to style the list in the unordered list of the user icon*/
+{
+	opacity:1;
+	line-height:35px; height:35px; float:none;
+	color:White;
+}
+.userbtn:hover div /*used to style the div of the user icon on hover*/
+{
+	opacity:1;
+}
+.userbtn ul li:hover /*used to style the list in the unordered list of the user icon on hover*/
+{
+	   background-color: #a6a6a6;
+   color :White ;
+	}
+.userbtn ul li a:focus /*used to style the list in the unordered list of the user icon on focus*/
+{
+	bottom:-2px;
+}
+
+.cartbtn /*used to style the cart button in the home page*/
+{
+	background-image:url('image/cart.jpg');
+ border-color:Black ;
+	background-size:370%;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:#336699;
+	float:right;	
+ border: 3px solid #1C456E;
+    width:130px;
+	height:50px;
+	position:relative;
+	top:-30px;
+	left:-20%;
+	cursor:pointer;
+	text-decoration:none;
+	border-radius:4px;
+	 box-shadow: 0 3px 9px 0 rgba(0,0,0,0.20), 0 9px 20px 0 rgba(0,0,0,0.14);
+	
+}
+
+.cartbtn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.cartlist /*used to style the cart in the home page*/
+{
+	position:relative;
+	height:100px;
+	width:200px;
+	background:white;
+	border-radius:5px;
+	border:1px solid #B7B7B7;
+	border-top:none;
+	left:-75px;
+	top:42px;
+	z-index:1;
+	box-shadow: inset 0 14px 6px rgba(256,256,256,0.9);
+	opacity:0;
+	transition:0.9s ease;
+	cursor:auto;
+}
+.cartlisthead /*used to style the header of the cart*/
+{
+	position:relative;
+	height:30px;
+	width:99%;
+	border-radius:5px 5px 0 0;
+	border:1px solid #fff;
+	z-index:1;	
+	background:#B7B7B7;
+	text-align:center;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0))); 
+	background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(-90deg, rgba(255,255,255,1), rgba(255,255,25,0));
+}
+.cartitem, .cartamount, .itemnolabel, .amountlabel, .viewcartbtn, .checkbtn, hr /*used to style the labels, buttons and the horizontal ruler in the cart*/
+{
+	position:relative;
+	color:green;
+	font-family:@Arial Unicode MS;
+	/*font-family: 'Bree Serif', serif;*/
+	font-weight: 600;
+	font-size: 16px;
+	text-align:center;
+	top:-30px;
+	float:left;
+	left:5px;
+}
+.cartamount /**/
+{
+	left:80px;
+}
+.itemnolabel, .amountlabel /**/
+{
+	top:5px;
+	left:-80px;
+	font-size: 30px;
+	color :green ;
+}
+.itemnolabl
+{
+	margin-left :9px;
+	top:5px;
+	left:-20px;
+	font-size:25px;
+	color :white;
+}
+
+.itemnolbl
+{
+margin-left :7px;
+	font-size:17px;
+	color :white;
+}
+.amountlabel 
+{
+	position:absolute;
+	right:-170px;
+	top:40px;
+	color:Red;
+	z-index:100;
+}
+
+.amountl 
+{
+	float:left;
+		font-family:@Arial Unicode MS;
+	/*font-family: 'Bree Serif', serif;*/
+	font-weight: 600;
+	font-size: 20px;
+	text-align:center;
+	position:relative ;
+	right:-170px;
+	top:10px;
+	color:Black;
+	z-index:100;
+}
+.amount
+{
+		float:left;
+		font-family:@Arial Unicode MS;
+	/*font-family: 'Bree Serif', serif;*/
+	font-weight: 600;
+	font-size: 20px;
+	text-align:center;
+	position:relative ;
+	right:-50px;
+	top:28px;
+	color:Black;
+	z-index:100;
+}
+.cartlist hr 
+{
+	top:10px;
+	left:2px;
+	width:98%
+}
+.viewcartbtn, .checkbtn 
+{
+	top:12px;	
+	color:Red;
+}
+.checkbtn, .checkbtn1 /*used to style the buttons in the casrtlisthead and cart.aspx*/
+{
+	left:40px;
+	background:red;
+	color:White;
+	border-radius:5px;
+	font-weight:800;
+	width:70px;
+	border-radius:10%;
+	cursor:pointer;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0))); 
+	background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.5), rgba(255,255,25,0));
+}	
+.cartbtn:hover div /*used to change the visibility of cart div*/
+{
+	opacity:1;
+}
+
+.navigation /*used to style the arrow in the home page*/
+{
+	background-color:#62879d;
+	width: 20%;
+	height: 70px;
+}
+.catagories /*used to style the categories div in the home page*/
+{
+	background-color:#23484B;
+	width:19.9%;
+	height: 1130px;
+	float: left;
+	border-right:1px solid #066497;
+	z-index:100;
+}
+.catul a li /*used to style the list in the unordered list of the category div*/
+{
+	text-decoration:none;
+	font-size:x-large;
+	font-weight:900 ! important;
+	color:Orange;
+	list-style:none;
+	margin-top:30px;
+	border-left:none;
+	transition: 0.5s ease;
+	cursor:pointer;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0))); 
+	background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.5), rgba(255,255,25,0));
+	}
+.cathead /*used to style the header of the category div*/
+{
+	background-color:Orange;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0))); 
+	background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.5), rgba(255,255,25,0));
+	font-family:Candara;
+	font-size:x-large;
+	font-weight:bolder;
+	margin-top:50px;
+	height:35px;
+	text-align:center;
+	padding:8px 0 0 0;
+	box-shadow: inset 0 6px 6px rgba(256,256,256,0.75);
+}
+.catul a li:hover /*used to style the list in the unordered list of the category div on hover*/
+{
+	margin-left:30px;	
+}
+.ad /*used to style the div that containing 5 images */
+{
+	position:relative;
+	top:0px;
+	width:80%;
+	height: 240px;
+	float:left;
+}
+.content /*used to style the div that containing 3 sets of navigaton list of images*/
+{
+	background-color:#ffffff;
+	width: 100%;
+	height:3870px;
+	float:right;
+}
+
+/*CSS for ProductList.aspx*/
+.sort /*used to style the div that containing 2 dropdownlist*/
+{
+	width:100%;
+	background-color:#ffffff;
+	height:60px;
+	background:#FfFFFF;
+	
+}
+.sortddl /*used to style the dropdownlist in the product list page*/
+{
+	position:relative;
+	width:10%;
+	height:60%;
+	top:20%;
+	left:-50px;
+	margin-left:5%;
+	font-size:20px;
+	font-family:Candara;
+	font-weight:bolder;
+	float:right;
+	background:#fafafa;
+	color:#444;
+}
+.listcontent /*used to style the div that containing images*/
+{  margin-top :5px;
+	width:95%;
+	margin:auto;
+	height:1300px;	
+	background-color :#f2f2f2;
+	border-left:1px solid white;
+	border-right:1px solid white;
+}
+#pagerdiv /*used to style the div that containing buttons to move to the next page*/
+{
+	border-left:1px solid white;
+	border-right:1px solid white;
+	top:30px;
+	width:100%;
+	margin-left:4.9%;
+	text-align:center;
+	background:#ffffff;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0))); 
+	background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6));
+	background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.5), rgba(255,255,25,0));
+
+}
+.popularproducts /*used to style the div that containing images of the popular products*/
+{
+	position:relative;
+	top:60px;	
+}
+.productpanel /*used to style the div that containing details of the image */
+{
+	margin: 15px 10px 0 16px;
+	margin-left:3%;
+	width:25%;
+	float:left;
+	height:43%;
+	text-align:center ;
+	border:1px solid #cccccc;	
+	background:#ffffff;
+	
+}
+.productimg /*used to style the images*/
+{
+	width:95%;
+	height:380px;
+	border:1px solid black;	
+}
+.productimg:hover /*used to style the images*/
+{
+	width:100%;
+	height:390px;
+	
+}
+.namelbl /*used to style the label in the product list view page*/
+{
+	float :left;
+ text-align :center;
+	width:auto;
+	margin-top:15px;	
+right:-50px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 600;
+	font-size: 18px;
+ position :relative;
+
+}
+.pricelbl /*used to style the label in the product list view page*/
+{ 
+	position:relative ;
+	width:20px;
+ height :40px;
+	font-family: 'Bree Serif', serif;
+
+	font-weight: 600;
+	font-size: 25px;
+	color:Red;
+	float :left ;
+	bottom:-60px;
+	
+	
+}
+
+.label {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:   #1C456E;;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.label span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.label span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.label:hover span {
+  padding-right: 25px;
+}
+
+.label:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.addcartbtn , .addcartbtn1, .viewbtn /*used to style the buttons in the product list view page*/
+{
+	width:40%;
+	position:relative;
+	float:right;
+	padding: 5px 5px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #fff;
+	margin-left:15px;
+	margin-right:15px;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);	
+	border: 1px solid #46b3d3;
+	border-radius: 3px;
+ bottom :-100px;
+	cursor: pointer;
+	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	background:#09c; 
+	background-color: #1C456E;
+
+}
+.addc /*used to style the buttons in the product list view page*/
+{
+	width:18%;
+	position:relative;
+	float:right;
+	padding: 5px 5px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: black;
+	margin-left:15px;
+	margin-right:15px;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);	
+	border: 1px solid black;
+	border-radius: 20px;
+ bottom :20px;
+	cursor: pointer;
+	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	background:#09c; 
+	background-color:white ;
+
+}
+
+
+.addcartbt /*used to style the buttons in the product list view page*/
+{
+	position:relative;
+	float:right;
+	padding: 5px 5px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #fff;
+	left:-390px;
+	margin-left:15px;
+	margin-right:15px;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);	
+	border: 1px solid #46b3d3;
+	border-radius: 3px;
+bottom:-70px;
+	cursor: pointer;
+	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	background:#09c; 
+	background-color: #1C456E;
+		height : 70px;
+	width : 200px;
+
+}
+.addcart /*used to style the buttons in the product list view page*/
+{
+	position:relative;
+	float:right;
+	padding: 5px 5px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #fff;
+	left:-200px;
+
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);	
+	border: 1px solid #46b3d3;
+	border-radius: 3px;
+
+	cursor: pointer;
+	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	background:#09c; 
+	background-color: #1C456E;
+		height : 60px;
+	width : 150px;
+		margin-top:60px;
+	right:25%;
+
+}
+.addcartb /*used to style the buttons in the product list view page*/
+{
+	height : 70px;
+	width : 200px;
+	position:relative;
+	float:right;
+	padding: 5px 5px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 25px;
+	color: #fff;
+	left:135px;
+
+	margin-right:15px;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);	
+	border: 1px solid #46b3d3;
+	border-radius: 3px;
+bottom:-70px;
+	cursor: pointer;
+	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	background:#09c; 
+	background-color: #1C456E;
+
+}
+
+.wishlist
+{
+		right:-10px;
+	background-color :White ;
+	border-radius:40px;
+	width:60px;
+	height:60px;
+	position:relative;
+	float:left;
+ border-color : #ffffff;
+ 	border:1px solid white;	
+	bottom:-90px;
+	background : white;
+	background-image:url('image/icon/heartt.jpg');
+}
+
+.wishli
+{	
+	right:-10px;
+	border-radius:40px;
+ border-color : #ffffff;
+	width:60px;
+	height:60px;
+	position:relative;
+	float:left;
+ 	border:1px solid white;	
+	bottom:-92px;
+	background-image:url('image/icon/heartred.png');
+}
+
+.wishlist:after
+{
+	width:60px;
+	height:60px;
+	position:relative;
+	float:left;
+
+	bottom:-100px;
+	background-image:url('image/icon/heartred.png');
+}
+
+
+.heart { 
+        position: relative; 
+        width: 60px; 
+        height: 60px; 
+        background:red;
+      } 
+
+      .heart:before 
+       { 
+        position: absolute; 
+        content: ""; 
+        left: 50px; 
+        top: 0; 
+        width: 50px; 
+        height: 60px; 
+        background: red; 
+        border-radius: 50px 50px 0 0; 
+        -webkit-transform: rotate(-45deg); 
+        -moz-transform: rotate(-45deg); 
+        -ms-transform: rotate(-45deg); 
+        -o-transform: rotate(-45deg); 
+        transform: rotate(-45deg); 
+       -webkit-transform-origin: 0 100%; 
+       -moz-transform-origin: 0 100%; 
+       -ms-transform-origin: 0 100%; 
+       -o-transform-origin: 0 100%; 
+       transform-origin: 0 100%; 
+     } 
+
+      .heart:after { 
+        left: 0; 
+        -webkit-transform: rotate(45deg); 
+        -moz-transform: rotate(45deg); 
+        -ms-transform: rotate(45deg); 
+        -o-transform: rotate(45deg); 
+       transform: rotate(45deg); 
+       -webkit-transform-origin: 100% 100%; 
+       -moz-transform-origin: 100% 100%; 
+       -ms-transform-origin: 100% 100%; 
+       -o-transform-origin: 100% 100%; 
+       transform-origin :100% 100%; 
+     } 
+ 
+.viewbtn /*used to style the button in the product list view page*/
+{
+	float:left;	
+}
+.addcartbtn:hover , .viewbtn:hover /*used to style the buttons in the product list view page on hover*/
+{
+	background: #0099FF;	
+
+}
+
+.pageroll /*used to style the link button in the product list view page*/
+{
+	position:relative;
+	margin-top:25px;
+	margin-left:20px;
+	margin-right:30px;
+	color:white;
+	padding:5px 10px;
+	background:#333;
+	border-radius:5px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 800;
+	font-size: 16px;
+	cursor:pointer;
+}
+.pageroll:hover /**/
+{
+	background:#505055;
+	bottom:-1px;
+}
+.pageroll:focus /**/
+{
+	background:#505055;	
+}
+.footer, .footer1 /*used to style the footer in the product list view page*/
+{	
+	background-color:#333333;
+	float: left;
+	height: 150px;
+	width:100%;
+	 color:White;
+
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	border-top:1px solid black;
+}
+.footer1
+{
+	height:30px;
+}
+.homeicon, .helpicon, .abouticon
+{
+	float:right;
+	margin:5px 20% 0 0;
+	height:60px;
+	width:60px;
+	background-size:100%;
+	background-color:Transparent;
+	background-image:url('image/icon/home1.png');
+	background-repeat:no-repeat;
+	background-position:center;
+	border-radius:100%;
+}
+.helpicon
+{
+	width:80px;
+	background-size:80%;
+	margin-right:20%;
+	background-image:url('image/icon/help-icon.png');
+}
+.abouticon
+{
+	background-size:120%;
+	margin-right:20%;
+	background-image:url('image/icon/aboutus.png');
+}
+/*CSS for Product View Page*/
+.viewpage /*used to style the div that containing details of the  product*/
+{
+	margin:30px 50px 30px 50px;
+	border:1px solid black;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.5);
+	height:1300px;
+	padding:10px;
+	
+}
+.viewimage /*used to style the viewimage div in the view page div*/
+{
+
+	float:left;
+	width:45%;
+	border:2px solid #f2f2f2;
+	height:700px;	
+	
+	
+}
+.viewimg1 /*used to style the image in the viewimage div*/
+{
+	float:left;
+	height:430px;
+	width:100%;
+	border:1px solid black;
+	cursor:pointer;
+}
+.imgzoom
+{
+	position:absolute;
+	top:250px;
+	left:47%;
+	height:530px;
+	margin:auto;
+	width:100%;
+	z-index:9998;	
+	background-repeat:no-repeat;
+	background-size:400%;
+}
+.viewimg2, .viewimg3, .viewimg4 /*used to style the 3 images in the viewimage div*/
+{
+	float:left;
+	margin:50px 40px 10px 40px;
+	border:1px solid black;
+	height:70px;
+	width:20%;	
+	min-width:70px;
+	cursor:pointer;
+	background-size:100%;
+}
+.addcartbtn1 /*used to style the button in the view page*/
+{
+	top:40px;
+	left:-36%;
+}
+.addcartbtn1:hover
+{
+	background: #1cc;
+}
+.detail /*used to style the div that containing description of the product*/
+{
+	float:right;
+	width:58%;
+	border:1px solid black;
+	height:70%;
+	background-image: linear-gradient(180deg, rgba(200,255,255,1), rgba(35,35,33,0.7));		
+}
+.prdviewdiv /*used to style the div that containing the information of the product*/
+{
+	position:relative;
+	width:90%;
+	height:400px;
+
+	border:1px solid #d9d9d9;
+	margin:auto;
+	top:4%;
+	background:transparent;
+	opacity:1;
+	overflow-y:auto;
+}
+.prdviewdiv1 /*used to style the div that containing the information of the product*/
+{
+	position:relative;
+	width:50%;
+	height:700px;
+	float :left;
+	min-height:20%;
+
+	margin:auto;
+	
+	background:transparent;
+	opacity:1;
+	overflow-y:auto;
+}
+.prdviewdi /*used to style the div that containing the information of the product*/
+{
+	position:relative;
+	width:50%;
+	height:300px;
+	float :left;
+
+
+	margin:auto;
+	
+	background:transparent;
+	opacity:1;
+	overflow-y:auto;
+}
+
+.prd /*used to style the div that containing the information of the product*/
+{
+	position:relative;
+	width:50%;
+	height:100px;
+	float :left;
+
+
+}
+/*used to style the scroll bar inside the div prdviewdiv*/
+.prdviewdiv::-webkit-scrollbar { display:block; width: 10px; height: 10px;}
+.prdviewdiv::-webkit-scrollbar-button {  background: rgba(189,4,251,0.8); border-radius: 3px; }
+.prdviewdiv::-webkit-scrollbar-track-piece { background-color: #e0e0e0;}
+.prdviewdiv::-webkit-scrollbar-thumb { height:5%; background-image: linear-gradient(-90deg, rgba(15,15,255,0.5), rgba(189,4,251,0.7)); border-radius: 10px;}
+.prdviewdiv::-webkit-scrollbar-thumb:hover { transition:0.5s; background-image: linear-gradient(-90deg, rgba(15,15,255,0.7), rgba(189,4,251,0.9));}
+.prdviewdiv::-webkit-scrollbar-corner { background-color: rgba(189,4,251,0.8);}
+
+.prdviewtbl /*used to style the table that containing the information of the product*/
+{
+ float :left;
+	height:400px;
+	width:40% ! important;	
+	padding:10%;
+	padding-right:1%;
+	padding-top:20px;
+	background:transparent;
+}
+.tblhead /*used to style the table head that containing the header part of the table*/
+{
+	font-size:larger;
+	padding:2px;
+	text-align:justify;
+	color:#1C456E;
+	text-align:center;
+	font-size:xx-large;
+	
+}
+
+.prdviewtbl1 /*used to style the table that containing the information of the product*/
+{
+	float :right;
+	height:50%;
+	width:100% ! important;	
+	padding:10%;
+	padding-right:1%;
+	padding-top:20px;
+	background:transparent;
+}
+.tblhead1 /*used to style the table head that containing the header part of the table*/
+{
+	font-size:larger;
+	padding:2px;
+	text-align:justify;
+	color:Purple;
+	text-align:center;
+	font-size:xx-large;
+}
+.ordercontent /*used to style the left side of the table*/
+{
+	text-align:right;
+	width:auto;
+	font-family: 'Bree Serif', serif;
+	font-weight: 400;
+	font-size: 18px;
+	padding:5px 20px 5px 10px;
+}
+.ordercontent1 /*used to style the right side of the table*/
+{
+	text-align:left;
+	width:auto;
+	font-family: 'Bree Serif', serif;
+	font-weight: 500;
+	font-size: 20px;
+
+	padding:5px 10px 5px 20px;
+}
+.stars /*used to style the stars in the viewimage div*/
+{
+  background:url('image/icon/star-icon.png') repeat-x 0 -60px;
+  margin:50px;
+
+ bottom:-200px;
+  float:left;
+  
+}
+.stars div 
+{
+	bottom :-200px;
+  display: block;
+  width:0;
+  height: 30px;
+  background:url('image/icon/star-icon.png') repeat-x 0 -60px;
+}
+.stars1 /*used to style the stars in the viewimage div*/
+{
+  background-image:url('image/icon/star-icon.png');
+  background-position:0 -60px;
+  background-repeat:repeat-x;
+  margin:10px;
+  margin-bottom:0;
+  margin-top:-70px;
+  margin-left:16%;
+  margin-top:1px;
+}
+.stars1 div 
+{
+  display: block;
+  width:0;
+  height:30px;
+  background-image:url('image/icon/star-icon.png');
+   background-position:0 -60px;
+  background-repeat:repeat-x;
+}
+.reviewdiv /*used to style the review div*/
+{
+	width:90%;
+	height:200px;
+	margin-left:auto;
+	margin-right:auto;
+	color:Black;
+	text-align:center;
+}
+.expanddiv /*used to style the expanddiv */
+{
+	 margin-top:20px;
+	height:37px;
+	width:60%;
+	margin:auto;	
+	text-align:center;
+	font-size:xx-large;
+	color:White;
+	font-weight:bolder;
+	background:rgba(19, 35, 47, 0.4);
+	border-radius:10px;
+	box-shadow:0 0 2px 2px #131f2f;
+}
+.divbtn /*used to style the div (+)*/
+{
+	
+	text-align:right;
+	color:White;
+	font-weight:bolder;
+	float:right;
+	margin-right:1%;
+	cursor:pointer;
+	height:100% ! important;
+	width:20px ! important;
+	background:transparent;
+	border-radius: 0 10px 10px 0;
+}
+.revdiv, .revdiv1 /*used to style the div that containing the description*/
+{
+	background:white;
+	height:300px;
+	opacity:0;
+	max-height:0;
+	box-shadow:0 0 2px 2px #131f2f;
+	font-family: 'Bree Serif', serif;
+	font-weight: 800;
+	font-size: 16px;
+	color:Black;
+	float:right;
+	width:90%;
+	margin-right:20px;
+}
+.revdiv1
+{
+	float:left;	
+	width:20%;
+	border-radius:30px;
+	padding-top:10px;
+}
+
+/*Cart CSS*/
+.cartcontent div, .returndiv /*used to style the div in the cart and the return product page*/
+{
+	width:98%;
+	height:220px;
+	margin:10px;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.5);	
+	background-color:White;
+	border-radius:5px;
+}
+.returndiv /*used to style the div in the returnproduct.aspx*/
+{
+	border:1px solid black;
+	height:150px;
+	border-color:#bbb;
+}
+.cartheader, .checkdiv /*used to style the div that containing the name of the buyer and checkdiv containing the labels and the button*/
+{
+	height:70px;
+	width:100% ! important;
+	text-align:center;
+	margin:0px ! important;
+	font-family:@FangSong;
+	font-size:x-large;
+	font-weight:bolder;
+	padding:30px 0 0px 0;
+	background-color:#cccccc;
+	border-radius:0 ! important;
+	opacity:0.7;
+}
+.cartcontent img, .returndiv img /*used to style the image in the cart and the return div*/
+{
+	float:left;
+	width:32%;
+	height:200px;
+	margin:5px 10px 5px 10px;
+	border:1px solid black;	
+}
+.returndiv img
+{
+	height:140px;
+}
+.cartname, .cartprice, .cartqty, .cartremove /*used to style the labels in the cart*/
+{
+	position:absolute;
+	font-weight:bolder;	
+	font-family:Book Antiqua;
+	font-size:medium;
+	font-weight:600;
+	margin-top:60px;	
+}
+.cartname
+{
+	left:35%;	
+}
+
+.cartprice
+{
+	margin-top:65px;
+	right:30%;
+}
+
+
+.cartqty
+{
+	right:23%;
+	width:auto;
+	height:30px;
+	cursor:pointer;
+}
+
+.cartremove
+{
+	background-image:url('image/icon/delete-big.jpg');
+
+	background-size:100%;
+	background-color:Transparent;
+	height:60px;
+	width:80px;
+	
+	right:2%;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	border-radius:10px;
+	border:none;
+}
+
+.im
+{
+	height:auto;
+}
+.totprice, .totship /*used to style the labels in the cart*/
+{
+	position:relative;
+	float:right;
+	font-size:x-large;
+	font-weight:bolder;
+	color:black;
+	margin:35px 10px 0 0;	
+}
+.totship
+{
+	margin-right:70px;
+}
+.checkbtn1 /*used to style the button in the cart*/
+{
+	background-color :#1C456E;
+	position:relative;
+	top:-10px;
+	left: 40px;
+	height:40px;
+	width:250px;
+		font-size :large;
+	border-radius:4px;
+
+}
+.checkbtn /*used to style the button in the cart*/
+{
+	background-color :#1C456E;
+	position:relative;
+	top:-10px;
+	left: 40px;
+	height:40px;
+	width:250px;
+	font-size :large;
+	border-radius:4px;
+
+}
+/*CSS for Bill*/
+.orddetails  /*used to style the div that containing orderid and the date*/
+{
+	margin:auto;
+	margin-top:30px;
+	margin-left :300px;
+	float:left;
+	 right:-100px;
+	min-width:100px;
+	width:100%;
+	padding:50px;	
+	font-size:larger; 
+	color:Red;    
+}
+.billtabl /*used to style the table in the bill page*/
+{
+	font-family:Book Antiqua;
+	font-size:medium;
+	font-weight:600;
+ width: 65%;
+  height:40%;
+  right:-50px;
+  float:right ;
+  margin-right :340px;
+	border:1px solid black;
+}
+.billtabl tr  /*used to style the row in the table*/
+{
+		border:1px solid black;
+	  margin-right :100px;
+
+
+	height : 50px;
+	width :400px;
+	bottom:100px;
+}
+.billtabl tr th  /*used to style the header in the table*/
+{	
+	height :20px;
+	 color :Red;
+	 	border-right:1px solid black;
+	 		border-bottom:1px solid black;
+	 
+}
+.billtabl tr td  /*used to style the content in the table*/
+{
+	font-family:Book Antiqua;
+	font-size:medium;
+	font-weight:600;
+
+	border-right:1px solid black;
+	text-align:center;
+}
+.sellerdiv, .logisticdiv   /*used to style the div that contains the information of the seller, buyer, logistics*/
+{
+	background-color :White;
+	margin:10px;
+	float:right;
+	width:15%;
+	 right :-100px;
+	height:20px;
+}
+.buyerdiv
+{
+	font-size:large;
+	color:red;
+		background-color :White;
+	margin:10px;
+	float:left;
+	right :-100px;
+	width:40%;
+	height:20px;
+	
+}
+.billaddress   /*used to style the div that contains the addresses*/
+{
+	font-family:@FangSong;
+	font-size:medium;
+	font-weight:600;
+	margin:auto;
+	width:1200px;
+	min-height:100px;
+	height:auto;
+}
+.billl   /*used to style the div that contains the addresses*/
+{
+	font-family:@FangSong;
+	font-size:medium;
+	font-weight:600;
+	margin-top :300px;
+	margin:auto;
+	width:1200px;
+	min-height:100px;
+	height:auto;
+	float :right ;
+	left:130px;
+	margin-right :300px;
+}
+/*Return.aspx*/
+.reasondiv   /*used to style the div that contains the dropdownlist textbox and the button*/
+{
+	position:relative;
+	width:60%;
+	margin-left:20%;
+	height:500px;
+	margin-top:1%;
+	border:1px solid #00B359;	
+	text-align:center;
+}
+.reasondiv:hover
+{
+	transition: all 0.3s ease-in;
+	box-shadow:inset 0 0 2px 2px #00B359;
+}
+.reasonddl, .reasontxt, .reasonbtn   /*used to style the dropdownlist textbox and the button*/
+{
+	position:relative;
+	width:50%;
+	height:10%;
+	font-family:Book Antiqua;
+	font-size:20px;
+	font-weight:600;
+	margin-top:5%;
+	border-radius:5px;
+	background:white;
+	border:1px solid #00B359;
+}
+.reasontxt
+{
+	height:35%;
+	border-radius:0;
+	background:white;
+	border:1px solid #000;
+}
+.reasonbtn
+{
+	width:25%;
+	text-align:center;
+	margin-left:70%;
+	margin-bottom:5%;
+	background:#fff;
+	box-shadow: none;
+}
+.reasonbtn:hover, .reasonddl:hover
+{
+	background:#1abc9c;
+	transition:0.6s;
+	color:White;
+}
+.reasonbtn:focus
+{
+	bottom:-1px;
+}
+.reasontxt:hover
+{
+	box-shadow: 0 0 1px 1px #1abc9c;
+	border:1px solid #1abc9c;
+}
+.reasontxt:focus
+{
+	box-shadow: 0 0 1px 1px #1abc9c;
+	border:1px solid #1abc9c;
+}
+
+/*CSS for Help Page*/
+.chatdiv, .headdiv, .typediv
+{
+	height:500px;
+	overflow:auto;
+	width:65%;	
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:rgba(128,128,128,0.2);
+	border:1px solid black;
+	
+}
+.chatdiv
+{
+	background-image:url('image/home-bg.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+.headdiv, .typediv
+{
+	width:65%;
+	height:50px;
+	margin-top:10px;
+	border:none;
+	background-color:rgba(15,105,90,1) ! important;
+}
+.icon
+{
+	float:left;
+	margin-left:3%;
+	width:50px;
+	height:50px;
+	border-radius:100%;
+	background-image:url('image/icon/chat-icon.png');
+	background-size:90%;
+	background-repeat:no-repeat;
+	background-position:center;
+
+}
+.lblname
+{
+	float:left;
+	margin-left:3%;
+	font-family: 'Bree Serif', serif;
+	font-weight: 500;
+	font-size: 22px;
+	padding:12px;
+	color:White;
+}
+.typediv
+{
+	margin-top:0;
+	height:55px;	
+	background-color:rgba(128,128,128,0.4);
+}
+.texttxt, .sendbtn
+{
+	float:left;
+	font-family: 'Bree Serif', serif;
+	font-weight: 500;
+	font-size: 16px;
+	width:400px;
+    height :50px;
+    margin-left:20%;
+    background:#f6f6f6;
+}
+.sendbtn
+{
+	font-size: 22px;
+	width:50px;
+	height:50px;
+	margin:0px 0 0 2%;
+	border-radius:100%;
+	background-image:url('image/icon/sendbtn.png');
+	background-size:160%;
+	background-position:center;
+	border:none;
+}
+.divmessageouter
+{
+	margin-left:1.5%;
+	width:70%;
+	float:left;
+}
+.divmessage
+{
+	float:left;
+	width:auto;
+	max-width:90%;	
+	background:window;
+	margin-bottom:10px;
+	padding:10px;
+	overflow:auto;
+	border-radius:0 10px 10px 10px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+.divresponseouter
+{
+	margin-right:1.5%;
+	width:70%;
+	float:right;	
+}
+.divresponse
+{
+	padding:10px;
+	float:right;
+	width:auto;
+	max-width:90%;	
+	background-color:#E8FCC2;
+	overflow:auto;
+	border-radius:10px 0 10px 10px;
+	margin-bottom:10px;
+	text-align:left;
+	font-family: 'Bree Serif', serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+.lbldate, .lbldate1
+{
+	float:right;
+	font-family: 'Bree Serif', serif;
+	font-weight: 500;
+	font-size: 11px;
+	margin-top:5px;
+}
+.divtri, .divtri1
+{
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 7px solid transparent;
+  border-bottom-color:white;
+  border-left-color:white;
+  float:left;
+  opacity:1;
+  transform:rotate(-180deg);
+}
+.divtri1
+{
+	float:right;
+	transform:rotate(-90deg);
+	border-color:#E8FCC2;
+    border-bottom-color:transparent;
+    border-left-color:transparent;
+}
+/*CSS For Message Box*/
+#msg
+{
+	width:100%;
+	display:none;
+	position:absolute;
+	height:500px;
+	text-align:center;
+	font-size:x-large;
+	color:Blue;
+	margin:auto;
+	background-color:rgba(128,128,128,0.4);
+	opacity:1;
+	top:-1px;	
+	z-index:9998;	
+}
+.msgbox
+{	
+	text-align:center;
+	color:black;
+	font-size:x-large;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:60%;
+	min-width:100px;
+	width:auto;
+	max-width:400px;
+	min-height:80px;
+	height:auto;
+	opacity:1;
+	z-index:9999;
+	background-color:#F5F5F5;
+	border:2px solid #000;
+	border-color:black;
+	border-radius:5px;
+	box-shadow:0 0 1px 1px #fff;
+	transition:0.6s ease;
+	
+}
+.msgbox:hover
+{
+	box-shadow:0 0 4px 4px #fff;
+}
+.msgcontent
+{
+	width:97%;
+	height:auto;
+	z-index:9999;
+	margin-bottom:10px;
+}
+.warndiv
+{
+	float:left;
+	width:30px;
+	margin-left:10px;
+	margin-right:20px;
+}
+.warndivicon
+{
+	float:left;
+	width:30px;
+	height:30px;
+	border-radius:100%;
+	background-image:url('image/icon/12.jpg');
+	background-size:100%;
+	margin-bottom:auto;
+	margin-top:auto;
+}
+.msgbtndiv
+{
+	width:100%;
+	height:40px;
+}
+.msgbtn
+{	
+	float:right;
+	text-align:center;
+	color:black;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	font-size:x-large;
+	width:30px;
+	height:30px;
+	opacity:0.7;
+	z-index:10000;
+	background:radial-gradient(rgba(0,255,255,0.5),rgba(189,4,251,0.5));
+	border:1px inset;
+	border-radius:100%;
+	transition:0.6s;
+	margin:5px 5px 0 0;
+	border:1px solid #fff;
+}
+.msgbtn:hover
+{
+	box-shadow:0 0 2px 2px #7dfe9c;
+	color:silver;
+	opacity:1;
+	background:radial-gradient(rgba(0,255,255,0.7),rgba(189,4,251,0.7));
+}
+.msgbtn:focus
+{
+	z-index:-2px;
+}

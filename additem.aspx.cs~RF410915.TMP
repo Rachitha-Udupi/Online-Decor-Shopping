@@ -1,0 +1,128 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+
+public partial class additem : System.Web.UI.Page
+{
+    connect c;
+    string curtain = "C", wallpaper = "W", blinds = "B", lights = "L";
+
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        //try
+        //{
+        //    c = new connect();
+        //    int count;
+        //    c.cmd.CommandText = "select count (*) from item";
+        //    count = Convert.ToInt16(c.cmd.ExecuteScalar()) + 1;
+        //    TextBox1.Text = count.ToString();
+        //    Session["item_id"] = TextBox1.Text;
+        //    // TextBox1.Enabled = false;
+        //}
+        //catch (Exception)
+        //{
+        //    throw;
+        //}
+    }
+   
+        
+    protected void Button2_Click1(object sender, EventArgs e)
+    {
+        try
+        {
+            TextBox1.Text = " ";
+            TextBox2.Text = " ";
+            TextBox3.Text = " ";
+            TextBox4.Text = " ";
+           // TextBox5.Text = " ";
+
+            c = new connect();
+            int count;
+            c.cmd.CommandText = "select count (*) from item";
+            count = Convert.ToInt16(c.cmd.ExecuteScalar()) + 1;
+            TextBox1.Text = count.ToString();
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+
+
+    }
+    protected void Button1_Click1(object sender, EventArgs e)
+    {
+        try 
+        {
+            c = new connect();
+            c .cmd .CommandText ="insert into item1 values(@item_id,@item_name,@category,@price,@description,@qty,@item_image)";
+            c.cmd.Parameters.Add("@item_id", SqlDbType.Int).Value = Convert.ToInt16(TextBox1.Text);
+            c .cmd .Parameters .Add ("item_name",SqlDbType .VarChar ).Value=TextBox2 .Text ;
+            c .cmd .Parameters .Add ("@category",SqlDbType .VarChar ).Value=DropDownList1 .SelectedItem.Text  ;
+            c.cmd.Parameters.Add("price", SqlDbType.BigInt ).Value = Convert.ToInt32(TextBox3.Text);
+            c .cmd .Parameters .Add ("description",SqlDbType .NVarChar ).Value=TextBox4 .Text;
+            c.cmd.Parameters.Add("qty", SqlDbType.Int).Value = DropDownList2.SelectedItem.Text;
+            
+           if(FileUpload1 .HasFile )
+           {
+               
+                   String str=FileUpload1 .FileName ;
+                   FileUpload1 .PostedFile .SaveAs (Server .MapPath (str));
+                   String image=str .ToString ();
+                   c.cmd .Parameters .AddWithValue ("@item_image",image);
+                   MessageBox.Show("Item inserted");
+                   c.cmd.ExecuteNonQuery();
+
+               
+               }
+               else 
+               {
+                   MessageBox .Show ("select image first");
+               }
+               
+           }
+            catch (Exception )
+        {
+                throw ;
+            }
+
+            
+            
+            
+             
+
+
+    }
+
+
+    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+       
+        if (DropDownList1.SelectedItem.Text == "Curtains")
+        {
+           // c = new connect();
+            int count;
+           // c.cmd.CommandText = "select count (*) from item1 where category='"+DropDownList1 .SelectedValue .ToString ()+"' ";
+            SqlCommand cmd = new SqlCommand("select count(item_id) from item1 where category='" + DropDownList1.SelectedItem.Text + "'");
+
+            count = Convert.ToInt16(c.cmd.ExecuteScalar()) + 1;
+            TextBox1.Text = curtain + count.ToString();
+
+        }
+
+    }
+}
+
+
+    
+
+

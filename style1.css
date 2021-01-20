@@ -1,0 +1,55 @@
+﻿body 
+{
+	
+	padding :0;
+	margin :0;
+}
+.container ul 
+{
+	list-style :none;
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.container li
+{
+	background-color:Transparent;
+	width:200px;
+	border-radius:30px;
+	border:1px solid White;
+	height:60px;
+	line-height :50px;
+	text-align :center ;
+	float :left ;
+	color :Red;
+	font-size :23px;
+	position :relative ;
+	opacity:0.8;
+}
+.container ul li:hover
+{
+	background-color:White;
+}
+.container ul li:hover::before
+{
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.container ul ul 
+{
+	display:none ;
+}
+.container ul li:hover >ul
+{
+	display :block ;	
+}
+.container ul ul ul 
+{
+	margin :left;
+	top :0px;
+	position :absolute ;
+	
+}
+

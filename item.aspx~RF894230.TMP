@@ -1,0 +1,28 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="item.aspx.cs" Inherits="item" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel="Stylesheet" href="nav.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        &nbsp; &nbsp;&nbsp;&nbsp;<asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1"
+            OnItemCommand="DataList1_ItemCommand">
+            <ItemTemplate>
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" ImageUrl='<%# Eval("catimage") %>'
+                    Width="50px" />
+                <asp:Label ID="Label1" runat="server" Text='<%# Eval("category_name") %>'></asp:Label>
+            </ItemTemplate>
+        </asp:DataList>&nbsp;
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:bgroup28ConnectionString %>"
+            SelectCommand="SELECT * FROM [category]"></asp:SqlDataSource>
+ 
+ 
+ 
+
+    </form>
+</body>
+</html>

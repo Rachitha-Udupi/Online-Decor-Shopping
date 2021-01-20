@@ -1,0 +1,109 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+
+public partial class curtain : System.Web.UI.Page
+{
+    connect c;
+    SqlDataAdapter adp = new SqlDataAdapter();
+    //DataSet ds;
+    DataTable dt = new DataTable();
+   
+    DataTable dt1 = new DataTable();
+    DataTable dt2 = new DataTable();
+    //DataTable dt3 = new DataTable();
+    //DataTable dt4 = new DataTable();
+    //DataTable dt5 = new DataTable();
+    //DataTable dt6 = new DataTable();
+    //DataTable dt7 = new DataTable();
+    //DataTable dt8 = new DataTable();
+    //DataTable orgdt = new DataTable();
+   
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+     
+    }
+    
+       
+
+ 
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+    try
+        {
+
+            System.Web.UI.WebControls.Button s = (System.Web.UI.WebControls.Button)sender;
+           
+           //Session["item_id"] = s.Attributes["name"].ToString();
+            //Label3.text = Session["item_id"];
+           
+
+            if (Session["cust_id"].ToString() == "")
+            {
+                Page.ClientScript.RegisterStartupScript(this.GetType(), "msgbox", "<script> message('Please login first')</script>");
+                //Session["link"] = "item.aspx";
+                Response.Redirect("~/clogin.aspx");
+            }
+            else
+            {
+                c = new connect();
+                c.cmd.CommandText = "select item_id from cart where item_id='" + Session["item_id"].ToString() + "' and cust_id='" + Session["cust_id"].ToString() + "'";
+                adp.SelectCommand = c.cmd;
+                adp.Fill(dt1);
+                if (dt1.Rows.Count > 0)
+                {
+
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "msgbox", "<script> message('Item exists in Cart')</script>");
+                    //nxtpage_click(lnkbtn[active_page - 1], EventArgs.Empty);
+                }
+                else 
+                {
+                    //string cart_id = "CART", temp = Session["cust_id"].ToString().Substring(3, Session["cust_id"].ToString().Length - 3);
+                    //cart_id += temp;
+                    int count;
+                    c.cmd.CommandText = "select count(*) from cart";
+                    count = Convert.ToInt16(c.cmd.ExecuteScalar()) + 1;
+                    int price;
+                    c.cmd.CommandText = "select price from item";
+                    
+                    c.cmd.CommandText = "insert into cart values(@cart_id,@item_id,@cust_id,@qty,@price)";
+                    c.cmd.Parameters.Clear();
+                    c.cmd.Parameters.Add("@cart_id", SqlDbType.Int).Value = count;
+                    c.cmd.Parameters.Add("@item_id", SqlDbType.Int).Value = Session["item_id"];
+                    c.cmd.Parameters.Add("@cust_id", SqlDbType.NVarChar).Value = Session["cust_id"];
+                    c.cmd.Parameters.Add("@price", SqlDbType.Int).Value = Session["item_id"];
+
+
+                    //c.cmd.CommandText = "insert into cart(cart_id,item_id,cust_id,qty,price values('" + cart_id + "','" + Session["item_id"].ToString() + "','" + Session["cust_id"].ToString() + "','" + "'," + 1 + "," + Convert.ToInt64(s.Attributes["Label1"]) + ")";
+                    //c.cmd.ExecuteNonQuery();
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "msgbox", "<script> message('Item Successfully Added to Cart')</script>");
+                    c.cmd.CommandText = "SELECT * FROM cart WHERE (cust_id = '" + Session["cust_id"].ToString() + "')";
+                    adp.SelectCommand = c.cmd;
+                    dt2.Clear();
+                    adp.Fill(dt2);
+                                  }
+            }
+        }
+        //catch (NullReferenceException)
+        //{
+        //    Page.ClientScript.RegisterStartupScript(this.GetType(), "msgbox", "<script> message('You must login first')</script>");
+        //    Session["link"] = "item.aspx";
+        //    Response.AddHeader("REFRESH", "3;URL=clogin.aspx?val=login");
+        //}
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+   
+}

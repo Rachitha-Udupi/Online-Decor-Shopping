@@ -1,0 +1,28 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="item.aspx.cs" Inherits="item" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel="Stylesheet" href="nav.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+     <ul class="navbar navbar-inverse">
+						   <div class="container-fuild">
+						   <ul class="nav navbar-nav">
+  <li><a href="curtain.aspx"><i class="fa fa-fw fa-search"></i>CURTAINS</a> </li>
+  <li><a href="blinds.aspx"><i class="fa fa-fw fa-envelope"></i> BLINDS</a></li> 
+   <li><a href="carpet.aspx"><i class="fa fa-fw fa-user">CARPET</i></a></li>
+  <li><a href="wallpaper.aspx"><i class="fa fa-fw fa-user"></i>WALLPAPER</a></li>
+  <li><a href="lights.aspx"><i class="fa fa-fw fa-user">LIGHTS</i></a></li>
+   <li><a href="decorative.aspx"><i class="fa fa-fw fa-user">DECORATIVE ITEMS</i></a></li>
+    </ul>
+ 
+ 
+</div>
+    </ul>
+    </form>
+</body>
+</html>

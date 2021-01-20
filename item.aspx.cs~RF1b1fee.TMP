@@ -1,0 +1,53 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class item : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void LinkButton1_Click(object sender, EventArgs e)
+    {
+        Session["cat"] = LinkButton1.Text;
+        Response.Redirect("~/curtain.aspx");
+       
+        }
+    protected void LinkButton2_Click(object sender, EventArgs e)
+    {
+        Session["cat"] = LinkButton2.Text;
+        Response.Redirect("~/blinds.aspx");
+    }
+    protected void LinkButton3_Click(object sender, EventArgs e)
+    {
+        Session["cat"] = LinkButton3.Text;
+        Response.Redirect("~/decorative.aspx");
+    }
+    protected void LinkButton4_Click(object sender, EventArgs e)
+    {
+        Session["cat"] = LinkButton4.Text;
+        Response.Redirect("~/carpets.aspx");
+    }
+    protected void LinkButton5_Click(object sender, EventArgs e)
+    {
+        Session["cat"] = LinkButton5.Text;
+        Response.Redirect("~/wallpaper.aspx");
+    }
+    protected void LinkButton6_Click(object sender, EventArgs e)
+    {
+        Session["cat"] = LinkButton5.Text;
+        Response.Redirect("~/lights.aspx");
+    }
+}

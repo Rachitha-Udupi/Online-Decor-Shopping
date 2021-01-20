@@ -1,0 +1,19 @@
+﻿body
+{
+
+	margin:0;
+	color:#6a6f8c;
+	background:url(dbox.jpg);
+	background-color:Black ;
+	background-repeat:no-repeat; 
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+.container .ul .li .button
+{
+	width:100%;
+	display:block;
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}

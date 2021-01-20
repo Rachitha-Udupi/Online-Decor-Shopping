@@ -1,0 +1,123 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="loginform.aspx.cs" Inherits="login_form" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text" href="regstyle.css" />
+    
+</head>
+<body background="logformback.jpg" style="background-color: #ffffff" position="absolute">
+    <form id="form1" runat="server">
+     <div class="login-html" style="left: 35%; top: 15%">
+        <span style="font-size: 1em; color: #ffffff; font-family: Bookman Old Style">&nbsp;&nbsp;<asp:Panel
+            ID="Panel1" runat="server" BackColor="Transparent" BorderColor="Transparent"
+            BorderStyle="None" Height="361px" Width="859px">
+            <strong><span style="font-size: 24pt">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+                style="font-size: 32pt">&nbsp;<asp:Label ID="Label1" runat="server" 
+                    BorderColor="Transparent" Font-Overline="True" Font-Underline="True" ForeColor="Indigo"
+                    Text="REGISTER HERE "></asp:Label><span style="color: #ffff00"></span><span style="color: #ffff00"></span></span><span style="color: #990000"><span style="font-size: 32pt"><span style="color: #ffffcc"></span><br />
+                        &nbsp;<br />
+                            </span>
+                    </span>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="font-size: 14pt"><span style="color: #ff6600"><span style="color: #ff3300">FI<span
+                    style="color: #ff6600">RS</span><span style="color: #ff9900">T N</span><span style="color: #ffcc00">A</span><span
+                        style="color: #ffff00">ME</span></span></span></span><span style="font-size: 12pt"><span style="font: menu; color: #990000">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; </span>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:TextBox ID="TextBox1" runat="server" BackColor="Transparent"
+                        BorderColor="Gold" BorderStyle="Groove" BorderWidth="4px" Width="269px" style="position: absolute; z-index: 100; left: 370px; top: 148px;" Wrap="true"  ></asp:TextBox>&nbsp;<br />
+                    &nbsp;<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                            <span style="font-size: 14pt"><span style="color: #ff3300">LA<span style="color: #ff6600">ST</span>
+                        <span style="color: #ff9900">NA</span><span style="color: #ffff00">ME</span></span>
+                        &nbsp;&nbsp;</span> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:TextBox ID="TextBox2" runat="server" BorderColor="Gold"
+                            BorderStyle="Groove" BorderWidth="4px" Width="269px" style="position: absolute; z-index: 101; left: 370px; top: 187px;" BackColor="Transparent"></asp:TextBox>&nbsp;&nbsp;<br />
+                            &nbsp;&nbsp;<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            <span style="font-size: 14pt"><span style="color: #ff3300">US<span style="color: #ff9900">ER</span><span
+                        style="color: #ffcc00">NA</span><span style="color: #ffff00">ME</span></span><span
+                            style="color: #ff6600"> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            <asp:TextBox ID="TextBox3" runat="server" BorderColor="Gold" BorderStyle="Groove"
+                                BorderWidth="4px" Width="269px" style="position: absolute; z-index: 102; left: 371px; top: 228px;" BackColor="Transparent" ></asp:TextBox>
+                            <br />
+                            <br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #ff3300">EM</span><span style="color: #ff9900">AI</span><span
+                                style="color: #ffcc00">L</span> <span style="color: #ffff00">ID</span> &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                            <asp:TextBox ID="TextBox4" runat="server" BorderColor="Gold" BorderStyle="Groove"
+                                BorderWidth="4px" Width="269px" BackColor="Transparent" style="z-index: 103; left: 370px; position: absolute; top: 272px"></asp:TextBox>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<br />
+                            &nbsp;<br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span style="color: #ff3300">PA</span>SS<span style="color: #ffcc00">WO</span><span
+                                style="color: #ffff00">RD</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:TextBox
+                                ID="TextBox7" runat="server" BackColor="Transparent" BorderColor="Gold" BorderStyle="Groove"
+                                BorderWidth="4px" Width="269px" style="z-index: 104; left: 371px; position: absolute; top: 317px" TextMode="Password"></asp:TextBox>
+                            <asp:CheckBox ID="CheckBox1" runat="server" Style="z-index: 105; left: 665px; position: absolute;
+                                top: 319px" AutoPostBack="True" ForeColor="Black" OnCheckedChanged="CheckBox1_CheckedChanged" Text="Show password" />
+                            <br />
+                            <br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #ff3300">CO</span>NF<span style="color: #ff9900">IRM</span>
+                            <span style="color: #ffcc00">PASS</span><span style="color: #ffff00">WORD</span>
+                            &nbsp;
+                            <asp:TextBox ID="TextBox8" runat="server" BackColor="Transparent" BorderColor="Gold"
+                                BorderStyle="Groove" BorderWidth="4px" Width="269px" style="z-index: 106; left: 370px; position: absolute; top: 362px" TextMode="Password"></asp:TextBox>
+                            &nbsp;&nbsp;<br />
+                            <br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                            <asp:CheckBox ID="CheckBox2" runat="server" Style="z-index: 114; left: 669px; position: absolute;
+                                top: 362px" AutoPostBack="True" ForeColor="Black" OnCheckedChanged="CheckBox2_CheckedChanged" Text="Show password" />
+                            &nbsp; &nbsp;&nbsp; <span style="color: #ff3300">CON</span>TA<span style="color: #ff9900">CT</span>
+                            <span style="color: #ffcc00">NUM</span><span style="color: #ffff00">BER</span> &nbsp;
+                            &nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBox5" runat="server" BorderColor="Gold" BorderStyle="Groove"
+                                BorderWidth="4px" Width="269px" BackColor="Transparent" style="z-index: 108; left: 371px; position: absolute; top: 408px"></asp:TextBox><br />
+                            <br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #ff3300">AD</span><span style="color: #ff9900">DR</span><span
+                                style="color: #ffcc00">E</span><span style="color: #ffff00">SS</span> &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<asp:TextBox
+                                ID="TextBox6" runat="server" BackColor="Transparent" BorderColor="Gold" BorderStyle="Groove"
+                                BorderWidth="4px" TextMode="MultiLine" Width="269px" style="z-index: 109; left: 372px; position: absolute; top: 457px"></asp:TextBox><br />
+                            <br />
+                            <br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #ff3300">ST</span>R<span style="color: #ffcc00">EE</span><span
+                                style="color: #ffff00">T</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp;&nbsp;&nbsp;
+                            &nbsp; &nbsp;&nbsp;
+                            <asp:TextBox ID="TextBox9" runat="server" BackColor="Transparent" BorderColor="Gold"
+                                BorderStyle="Groove" BorderWidth="4px" Width="269px" style="z-index: 110; left: 373px; position: absolute; top: 519px" OnTextChanged="TextBox9_TextChanged"></asp:TextBox><br />
+                            &nbsp;<br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            <span style="color: #ff3300">C</span>I<span style="color: #ffcc00">T</span><span
+                                style="color: #ffff00">Y</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" BackColor="Transparent"
+                                ForeColor="White" Width="269px" style="z-index: 111; left: 380px; position: absolute; top: 562px">
+                                <asp:ListItem></asp:ListItem>
+                                <asp:ListItem>UDUPI</asp:ListItem>
+                                <asp:ListItem>MANGLORE</asp:ListItem>
+                            </asp:DropDownList><br />
+                            <br />
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span style="color: #ff3300">PI</span>NC<span style="color: #ffcc00">O</span><span
+                                style="color: #ffff00">DE</span> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                            <asp:TextBox ID="TextBox10" runat="server" BackColor="Transparent" BorderColor="Gold"
+                                BorderStyle="Groove" BorderWidth="4px" Width="269px" style="z-index: 112; left: 376px; position: absolute; top: 602px" ForeColor="Black"></asp:TextBox><br />
+                            <br />
+                            &nbsp;<br />
+                            <br />
+                            &nbsp;
+                            <br />
+                            <br />
+                        &nbsp;&nbsp;<asp:Button ID="Button1" runat="server"  Text="SUBMIT" OnClick="Button1_Click" BackColor="SeaShell" BorderColor="DarkRed" BorderStyle="Solid" BorderWidth="3px" Font-Bold="True" Font-Names="Bookman Old Style" Font-Size="1em" ForeColor="DarkBlue" style="z-index: 113; left: 262px; position: absolute; top: 686px"  /><br />
+                        &nbsp; </span></span></span><br />
+            </span></strong>
+        </asp:Panel>
+            <br />
+            <br />
+            <br />
+            <br />
+        </span></div>
+    </form>
+</body>
+</html>

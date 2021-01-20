@@ -1,0 +1,108 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="mainpage.aspx.cs" Inherits="mainpage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel ="stylesheet" href ="style.css" />
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function TABLE1_onclick() {
+
+}
+
+// ]]>
+</script>
+</head>
+<body background="backg.jpg">
+    <form id="form1" runat="server">
+    
+    
+    <div class="container">
+    <ul>
+   <li style="left: 222px; top: 127px">Home</li>
+    <li style="left: 223px; top: 127px"> Contact Us </li>
+    <li style="left: 224px; top: 127px">Shopping Cart</li>
+    <li style="left: 225px; top: 127px">CheckOut</li>
+        
+    </ul>
+   
+    </div> 
+<span style="color: #ff0000"> </span>
+        <br />
+        <strong><span style="font-size: 24pt">Welcome</span></strong> &nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Label"
+            Width="53px"></asp:Label>&nbsp;<br />
+        
+        &nbsp; &nbsp;&nbsp;
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <asp:Panel ID="Panel1" runat="server" Height="979px" Style="left: 262px; position: relative;
+            top: -21px" Width="756px">
+            &nbsp;<asp:DataList ID="DataList1" runat="server" DataKeyField="item_id" DataSourceID="SqlDataSource1" RepeatColumns="3" RepeatDirection="Horizontal">
+                <ItemTemplate>
+                    <asp:Panel ID="Panel2" runat="server" Height="251px" Width="239px">
+                        <asp:ImageButton ID="ImageButton1" runat="server" CommandName="viewdetail" Height="200px"
+                            ImageUrl='<%# Eval("item_image") %>' Style="left: 24px; position: relative; top: 14px"
+                            Width="200px" /><br />
+                        <br />
+                        <asp:Label ID="Label2" runat="server" Style="left: 97px; position: relative; top: 1px"
+                            Text='<%# Eval("item_name") %>'></asp:Label></asp:Panel>
+                </ItemTemplate>
+            </asp:DataList><br />
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:bgroup28ConnectionString %>"
+                SelectCommand="SELECT * FROM [item] WHERE ([category] = @category)">
+                <SelectParameters>
+                    <asp:QueryStringParameter Name="category" QueryStringField="category" Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            <table style="left: -252px; width: 224px; position: relative; top: -525px; height: 332px">
+                <tr>
+                    <td style="width: 100px; background-color: black">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #ffffff">&nbsp; &nbsp; &nbsp; &nbsp;<strong><span style="font-size: 14pt">
+                            &nbsp; &nbsp;Category</span></strong></span></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; background-color: black">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" Font-Size="14pt"
+                            ForeColor="White" Style="left: 34px; position: relative; top: 1px">Curtains</asp:LinkButton></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; background-color: black">
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" CommandName="carpet" Font-Bold="True"
+                            Font-Size="14pt" Font-Underline="False" ForeColor="White" Style="left: 32px;
+                            position: relative; top: 0px">Carpets</asp:LinkButton></td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; background-color: black">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; background-color: black">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; background-color: black">
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+        <br />
+        <br />
+        <br />
+  
+    </form>
+    
+</body>
+</html>
